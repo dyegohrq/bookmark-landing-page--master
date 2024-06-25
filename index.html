@@ -5,21 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style/css.css">
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Features
-  Pricing
-  Contact
-  Login
+  <header id="header" class="header">
+    <div class="header_container">
+      <div class="logo_header">
+        <a href=""><img src="images/logo-bookmark.svg" alt=""></a>
+      </div>
+      <div id="nav_menu_mobile" class="nav_menu_mobile">
+        <div class="menu-content">
+          <div class="header_menu_burger">
+            <div class="logo">
+              <a href="index.html">
+                <div class="bookmark"><i class="fa-solid fa-bookmark"></i></div>
+                <span>BOOKMARK</span>
+              </a>
+            </div>
+            <button class="burger" id="burger">
+              <div class="hamburguer">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+              </div>
+            </button>
+          </div>
+          <nav class="links_menu">
+            <a href="">Features</a>
+            <a href="">Pricing</a>
+            <a href="">Contact</a>
+            <a href="" class="btn">Login</a>
+          </nav>
+        </div>
+
+        <div class="social_media">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+      </div>
+      <button class="burger" id="burger">
+        <div class="hamburguer">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </button>
+    </div>
+      <!-- <div id="nav_menu_desktop" class="nav_menu_desktop">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-bookmark.svg" alt="Bookmark logo"></a>
+        </div>
+
+        <nav class="links_menu">
+          Features
+          Pricing
+          Contact
+          Login
+        </nav>
+
+      </div> -->
+
+      
+
+  </header>
+  <!-- 
 
   A Simple Bookmark Manager
 
@@ -81,34 +136,34 @@
   Here are some of our FAQs. If you have any other questions you’d like 
   answered please feel free to email us.
 
-  <!-- Question 1 -->
+  comentario -  Question 1
   What is Bookmark?
 
-  <!-- Answer 1 -->
+  comentario -  Answer 1
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
 
-  <!-- Question 2 -->
+  comentario -  Question 2
   How can I request a new browser?
 
-  <!-- Answer 2 -->
+  comentario -  Answer 2
   Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
   Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
   Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
 
-  <!-- Question 3 -->
+  comentario -  Question 3
   Is there a mobile app?
 
-  <!-- Answer 3 -->
+  comentario - Answer 3
   Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
   sollicitudin ex et ultricies bibendum.
 
-  <!-- Question 4 -->
+  comentario - Question 4
   What about other Chromium browsers?
 
-  <!-- Answer 4 -->
+  comentario - Answer 4
   Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
   vitae neque eget nisl gravida pellentesque non ut velit.
 
@@ -122,13 +177,8 @@
 
   Features
   Pricing
-  Contact
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  Contact -->
+
+  <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>
 </body>
 </html>
