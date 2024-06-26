@@ -14,7 +14,7 @@
 <body>
 
   <header id="header" class="header">
-    <div class="header_container">
+    <div class="header_container" id="header_container">
       <div class="logo_header">
         <a href=""><img src="images/logo-bookmark.svg" alt=""></a>
       </div>
@@ -27,15 +27,8 @@
                 <span>BOOKMARK</span>
               </a>
             </div>
-            <button class="burger" id="burger">
-              <div class="hamburguer">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-              </div>
-            </button>
           </div>
-          <nav class="links_menu">
+          <nav class="links_menu" id="links_menu">
             <a href="">Features</a>
             <a href="">Pricing</a>
             <a href="">Contact</a>
@@ -47,72 +40,89 @@
           <a href=""><i class="fa-brands fa-square-facebook"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
         </div>
-
       </div>
-      <button class="burger" id="burger">
+      <button onclick="animarMenu()" class="burger" id="burger">
         <div class="hamburguer">
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
       </button>
-    </div>
-      <!-- <div id="nav_menu_desktop" class="nav_menu_desktop">
-        <div class="logo">
-          <a href="index.html"><img src="images/logo-bookmark.svg" alt="Bookmark logo"></a>
-        </div>
-
-        <nav class="links_menu">
-          Features
-          Pricing
-          Contact
-          Login
-        </nav>
-
-      </div> -->
-
-      
-
+    </div>    
   </header>
+  <main id="main" class="main">
+    <div class="main_container">
+      <div class="bookmark_manager">
+        <div class="bookmark_img">
+          <div class="bg_bookmark"></div>
+        </div>
+        <div class="bookmark_content">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="btn-bookmarke">
+            <a href="" class="btn">Get it on Chrome</a>
+            <a href="" class="btn firefox">Get it on Firefox</a>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+        <ul>
+          <li>Simple Bookmarking</li>
+          <li>Speedy Searching</li>
+          <li>Easy Sharing</li>
+        </ul>
+      
+        <div class="bookmark_click group">
+          Bookmark in one click
+
+          Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.
+
+          More Info
+        </div>
+      
+      
+        <div class="intelligent group">
+          Intelligent search
+
+          Our powerful search feature will help you find saved sites in no time at all.
+          No need to trawl through all of your bookmarks.
+
+          More Info
+        </div>
+      
+        <div class="share_bookmarks group">
+          Share your bookmarks
+
+          Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.
+
+          More Info
+        </div>
+        
+      </div>
+    </div>
+  </main>
   <!-- 
 
-  A Simple Bookmark Manager
+  
 
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
+  
 
-  Get it on Chrome
-  Get it on Firefox
+  
+  
 
-  Features
+  
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+  
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
+  
 
   Download the extension
 
@@ -180,5 +190,6 @@
   Contact -->
 
   <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
