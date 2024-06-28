@@ -124,13 +124,15 @@ body {
 
 .active .nav_menu_mobile {
     visibility: visible;
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     position: fixed;
+    z-index: 55;
 }
 
 .open .bar {
     background-color: white;
+    z-index: 56;
 }
 
 .open .hamburguer #bar1 {
@@ -348,4 +350,107 @@ body {
 
 .ativo {
     display: flex;
+}
+
+.download {
+    margin-top: var(--margin-top);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--gap);
+}
+
+.download .link-extension {
+    box-shadow: 0 0px 9px #00000045;
+    border-radius: 8px;
+    padding: 45px 20px 34px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.download .link-extension .text-extension {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.download .link-extension .text-extension .separetade {
+    background: url(../images/bg-dots.svg) no-repeat center / cover;
+    width: 100%;
+    height: 4px;
+    margin: 25px 0 10px 0;
+}
+
+.btn-extension {
+    width: 100%;
+}
+
+.frequently_asked {
+    margin-top: var(--margin-top);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--gap);
+}
+
+.frequently_asked .faq {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--Grayish-Blue);
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.frequently_asked .faq .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.frequently_asked .faq .question h3 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.frequently_asked .faq .question i {
+    color: var(--Soft-Blue);
+    transition: var(--transition);
+}
+
+.frequently_asked .faq .answer p{
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.frequently_asked .faq .answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.4s ease;
+}
+
+.frequently_asked .active_faq .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.frequently_asked .active_faq  .question i {
+    color: var(--Soft-Red);
+    transform: rotate(180deg);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

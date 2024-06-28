@@ -3,6 +3,7 @@ const headerContainer = document.getElementById('header_container')
 const navMenuMobile = document.getElementById('nav_menu_mobile')
 const list = document.getElementById('list')
 const li = list.querySelectorAll('#list li')
+const faqs = document.querySelectorAll('.faq')
 
 navMenuMobile.addEventListener('click', animarMenu)
 
@@ -35,3 +36,8 @@ li.forEach((li) => {
     })
 })
 
+faqs.forEach((faq) => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle('active_faq')
+    })
+})
