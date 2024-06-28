@@ -30,8 +30,7 @@ button {
 }
 
 h1,
-h2,
-h3 {
+h2{
     color: var(--Very-Dark-Blue);
     letter-spacing: 1px;
 }
@@ -39,6 +38,9 @@ h3 {
 p {
     color: var(--Grayish-Blue);
     line-height: 25px;
+    font-size: 15px;
+    width: 313px;
+    margin: auto;
 }
 
 .btn {
@@ -63,7 +65,7 @@ body {
 
 .header_container,
 .main_container {
-    padding: 0 20px;
+    padding: 0 35px;
     max-width: 1480px;
     margin: auto;
 }
@@ -309,10 +311,41 @@ body {
     visibility: visible;
 }
 
+.features .bg-feature {
+    background: url(../images/Rectangle-mobile.svg) no-repeat right / contain;
+    width: 100%;
+    height: 203px;
+    position: absolute;
+    z-index: -1;
+    top: 45%;
+    left: -10%;
+    transform: rotate(180deg);
+}
+
 .group {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    margin-top: var(--margin-top);
+}
+
+.group .img-features {
+    position: relative;
+}
+
+.group .img-features img {
+    width: 100%;
+}
+
+.group .text-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .ativo {
-    display: block;
+    display: flex;
 }
