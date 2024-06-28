@@ -308,3 +308,11 @@ body {
 .features .list .active_li .line {
     visibility: visible;
 }
+
+.group {
+    display: none;
+}
+
+.ativo {
+    display: block;
+}

@@ -22,4 +22,16 @@ function selectItem() {
 
 li.forEach((li) => {
     li.addEventListener('click', selectItem)
+
+    li.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        document.querySelectorAll('.group').forEach((div) => {
+            div.classList.remove('ativo')
+        })
+    
+        const targetId = e.target.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('ativo')
+    })
 })
+
