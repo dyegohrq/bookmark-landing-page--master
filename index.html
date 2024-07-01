@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 
 </head>
-<body>
+<body id="body">
 
   <header id="header" class="header">
     <div class="header_container" id="header_container">
@@ -32,7 +32,7 @@
             <a href="">Features</a>
             <a href="">Pricing</a>
             <a href="">Contact</a>
-            <a href="" class="btn">Login</a>
+            <a href="" class="btn btn_link_menu">Login</a>
           </nav>
         </div>
 
@@ -246,38 +246,39 @@
           </div>
         </div>
       
-        <div class="btn">More Info</div>
+        <div class="btn btn_more_feature">More Info</div>
       </div>
     </div>
   </main>
-  <!-- 
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
- 
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact -->
+  <footer id="footer">
+    <div class="stay">
+      <div class="stay_text">
+        <h3>35,000+ already joined</h3>
+        <h2>Stay up-to-date with what we’re doing</h2>
+      </div>
+      <form action="">
+        <div class="form-content">
+          <input type="email" name="email" id="email">
+          <span id="erro_message">mensagem de erro</span>
+          <button type="submit">Contact Us</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer_links">
+      <div class="left_content">
+        <div class="logo-footer"></div>
+        <nav class="nav_links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="contact">Contact</a>
+        </nav>
+      </div>
+      <div class="social_media_footer">
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://kit.fontawesome.com/24690ddc1f.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>

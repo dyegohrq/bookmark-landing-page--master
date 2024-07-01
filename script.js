@@ -4,12 +4,20 @@ const navMenuMobile = document.getElementById('nav_menu_mobile')
 const list = document.getElementById('list')
 const li = list.querySelectorAll('#list li')
 const faqs = document.querySelectorAll('.faq')
+const body = document.getElementById('body')
+
 
 navMenuMobile.addEventListener('click', animarMenu)
 
 function animarMenu() {
     headerContainer.classList.toggle('active')
     burger.classList.toggle('open')
+
+    if (headerContainer.classList == 'header_container active') {
+        body.style.overflow = 'hidden'
+    } else {
+        body.style.overflow = 'auto'
+    }
 }
 
 function selectItem() {
